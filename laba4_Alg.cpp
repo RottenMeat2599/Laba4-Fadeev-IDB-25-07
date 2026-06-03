@@ -22,7 +22,7 @@ int main() {
     std::string mostFrequentWord;
 
     for (auto pair : wordCount) {
-        std::cout << pair.first << ": " << pair.second << std::endl;
+        std::cout << pair.first << "-> " << pair.second << std::endl;
         if (pair.second > maxCount) {
             maxCount = pair.second;
             mostFrequentWord = pair.first;
@@ -31,7 +31,7 @@ int main() {
 
     if (!wordCount.empty()) {
         std::cout << "\n";
-        std::cout << "The most frequent word: " << mostFrequentWord << ": " << maxCount;
+        std::cout << "The most frequent word: " << mostFrequentWord << "-> " << maxCount;
     }
 
     return 0;
