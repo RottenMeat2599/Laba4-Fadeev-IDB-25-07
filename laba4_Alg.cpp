@@ -1,6 +1,6 @@
 ﻿#include <iostream>
 #include <string>
-#include <map>
+#include <unordered_map>
 #include <sstream>
 
 int main() {
@@ -9,7 +9,7 @@ int main() {
     std::cout << "Enter the text: ";
     std::getline(std::cin, text);
 
-    std::map<std::string, int> wordCount;
+    std::unordered_map<std::string, int> wordCount;
     std::stringstream ss(text);
     std::string word;
 
